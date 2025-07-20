@@ -1,5 +1,8 @@
 # CLAUDE.md
 
+- 日本語で返答してください。
+- 一連のタスクが終わったらコミットしてください。mainブランチで作業していただいて構いません。
+
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Project Overview

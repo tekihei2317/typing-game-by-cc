@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>タイピング練習アプリ - モックアップカタログ (TailwindCSS)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 p-8">
+    <div class="max-w-7xl mx-auto">
+        <h1 class="text-4xl font-bold text-center mb-12 text-gray-800">タイピング練習アプリ - モックアップカタログ</h1>
+        <p class="text-center text-gray-600 mb-16">TailwindCSS版</p>
+
+        <!-- 1. ログイン画面 -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-semibold mb-6 text-gray-700 border-b-2 border-blue-500 pb-2">1. ログイン画面</h2>
+            <div class="bg-white rounded-lg shadow-lg p-8 max-w-md mx-auto">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold text-gray-800">ログイン</h3>
+                    <p class="text-gray-600 mt-2">アカウントにログインしてください</p>
+                </div>
+                <form class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">メールアドレス</label>
+                        <input type="email" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="example@example.com">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">パスワード</label>
+                        <input type="password" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="パスワードを入力">
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition duration-200">ログイン</button>
+                </form>
+                <div class="text-center mt-6">
+                    <a href="#" class="text-blue-600 hover:underline">アカウントを作成する</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. メニュー画面 -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-semibold mb-6 text-gray-700 border-b-2 border-blue-500 pb-2">2. メニュー画面</h2>
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <div class="text-center mb-8">
+                    <h3 class="text-3xl font-bold text-gray-800">タイピング練習</h3>
+                    <p class="text-gray-600 mt-2">お疲れさまです、user@example.com さん</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                    <div class="bg-gradient-to-br from-blue-500 to-blue-600 text-white p-6 rounded-lg cursor-pointer hover:from-blue-600 hover:to-blue-700 transition duration-200">
+                        <h4 class="text-xl font-semibold mb-2">練習を始める</h4>
+                        <p class="text-blue-100">お題を選んでタイピング練習を開始しましょう</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-green-500 to-green-600 text-white p-6 rounded-lg cursor-pointer hover:from-green-600 hover:to-green-700 transition duration-200">
+                        <h4 class="text-xl font-semibold mb-2">練習履歴</h4>
+                        <p class="text-green-100">過去の練習結果を確認できます</p>
+                    </div>
+                </div>
+                <div class="text-center mt-8">
+                    <button class="text-gray-500 hover:text-gray-700">ログアウト</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. お題選択画面 -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-semibold mb-6 text-gray-700 border-b-2 border-blue-500 pb-2">3. お題選択画面</h2>
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-2xl font-bold text-gray-800">お題を選択</h3>
+                    <button class="text-blue-600 hover:text-blue-800">← メニューに戻る</button>
+                </div>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <div class="border border-gray-200 rounded-lg p-4 hover:border-blue-500 cursor-pointer transition duration-200">
+                        <h4 class="font-semibold text-gray-800 mb-2">基本単語</h4>
+                        <p class="text-sm text-gray-600 mb-3">初心者向けの基本的な単語</p>
+                        <div class="text-xs text-gray-500">問題数: 50</div>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-4 hover:border-blue-500 cursor-pointer transition duration-200">
+                        <h4 class="font-semibold text-gray-800 mb-2">ビジネス用語</h4>
+                        <p class="text-sm text-gray-600 mb-3">仕事でよく使われる用語</p>
+                        <div class="text-xs text-gray-500">問題数: 75</div>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-4 hover:border-blue-500 cursor-pointer transition duration-200">
+                        <h4 class="font-semibold text-gray-800 mb-2">IT用語</h4>
+                        <p class="text-sm text-gray-600 mb-3">プログラマー向けの専門用語</p>
+                        <div class="text-xs text-gray-500">問題数: 100</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. タイピング練習画面 -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-semibold mb-6 text-gray-700 border-b-2 border-blue-500 pb-2">4. タイピング練習画面</h2>
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <div class="flex justify-between items-center mb-6">
+                    <div class="text-sm text-gray-600">問題 3/15</div>
+                    <div class="text-sm text-gray-600">残り時間: 02:45</div>
+                </div>
+                <div class="text-center mb-8">
+                    <div class="text-3xl font-bold text-gray-800 mb-4">プログラミング言語</div>
+                    <div class="text-xl text-gray-600 mb-4">ぷろぐらみんぐげんご</div>
+                    <div class="text-lg font-mono bg-gray-100 p-4 rounded">
+                        <span class="text-green-600">progura</span><span class="bg-yellow-200">m</span><span class="text-gray-400">ingugengo</span>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center space-x-4 text-sm text-gray-600">
+                    <div>WPM: 245</div>
+                    <div>正解率: 95%</div>
+                    <div>ミス: 2</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. 練習結果画面 -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-semibold mb-6 text-gray-700 border-b-2 border-blue-500 pb-2">5. 練習結果画面</h2>
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">練習結果</h3>
+                    <div class="text-6xl font-bold text-blue-600 mb-2">A+</div>
+                    <div class="text-gray-600">スコア: 8,500点</div>
+                </div>
+                <div class="grid md:grid-cols-4 gap-4 mb-8">
+                    <div class="text-center p-4 bg-gray-50 rounded-lg">
+                        <div class="text-2xl font-bold text-gray-800">245</div>
+                        <div class="text-sm text-gray-600">WPM</div>
+                    </div>
+                    <div class="text-center p-4 bg-gray-50 rounded-lg">
+                        <div class="text-2xl font-bold text-gray-800">95%</div>
+                        <div class="text-sm text-gray-600">正解率</div>
+                    </div>
+                    <div class="text-center p-4 bg-gray-50 rounded-lg">
+                        <div class="text-2xl font-bold text-gray-800">03:24</div>
+                        <div class="text-sm text-gray-600">タイム</div>
+                    </div>
+                    <div class="text-center p-4 bg-gray-50 rounded-lg">
+                        <div class="text-2xl font-bold text-gray-800">8</div>
+                        <div class="text-sm text-gray-600">ミス数</div>
+                    </div>
+                </div>
+                <div class="space-y-2 mb-6">
+                    <div class="flex justify-between items-center p-3 bg-gray-50 rounded">
+                        <span class="font-medium">プログラミング言語</span>
+                        <div class="text-sm text-gray-600 space-x-4">
+                            <span>WPM: 250</span>
+                            <span>ミス: 1</span>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center p-3 bg-gray-50 rounded">
+                        <span class="font-medium">データベース</span>
+                        <div class="text-sm text-gray-600 space-x-4">
+                            <span>WPM: 240</span>
+                            <span>ミス: 0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center space-x-4">
+                    <button class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700">もう一度練習</button>
+                    <button class="bg-gray-200 text-gray-700 px-6 py-2 rounded-md hover:bg-gray-300">メニューに戻る</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. 練習履歴画面 -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-semibold mb-6 text-gray-700 border-b-2 border-blue-500 pb-2">6. 練習履歴画面</h2>
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-2xl font-bold text-gray-800">練習履歴</h3>
+                    <button class="text-blue-600 hover:text-blue-800">← メニューに戻る</button>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th class="text-left p-3">日時</th>
+                                <th class="text-left p-3">お題</th>
+                                <th class="text-left p-3">スコア</th>
+                                <th class="text-left p-3">WPM</th>
+                                <th class="text-left p-3">正解率</th>
+                                <th class="text-left p-3">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr>
+                                <td class="p-3">2024-01-15 14:30</td>
+                                <td class="p-3">IT用語</td>
+                                <td class="p-3 font-semibold">8,500</td>
+                                <td class="p-3">245</td>
+                                <td class="p-3">95%</td>
+                                <td class="p-3"><a href="#" class="text-blue-600 hover:underline">詳細</a></td>
+                            </tr>
+                            <tr>
+                                <td class="p-3">2024-01-15 13:15</td>
+                                <td class="p-3">ビジネス用語</td>
+                                <td class="p-3 font-semibold">7,200</td>
+                                <td class="p-3">220</td>
+                                <td class="p-3">92%</td>
+                                <td class="p-3"><a href="#" class="text-blue-600 hover:underline">詳細</a></td>
+                            </tr>
+                            <tr>
+                                <td class="p-3">2024-01-14 16:45</td>
+                                <td class="p-3">基本単語</td>
+                                <td class="p-3 font-semibold">6,800</td>
+                                <td class="p-3">210</td>
+                                <td class="p-3">88%</td>
+                                <td class="p-3"><a href="#" class="text-blue-600 hover:underline">詳細</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="flex justify-center mt-6">
+                    <div class="flex space-x-2">
+                        <button class="px-3 py-1 bg-gray-200 rounded">1</button>
+                        <button class="px-3 py-1 bg-blue-600 text-white rounded">2</button>
+                        <button class="px-3 py-1 bg-gray-200 rounded">3</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

@@ -5,14 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>タイピング練習アプリ - モックアップカタログ (TailwindCSS)</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        section {
+            scroll-margin-top: 100px;
+        }
+    </style>
 </head>
-<body class="bg-gray-50 p-8">
-    <div class="max-w-7xl mx-auto">
-        <h1 class="text-4xl font-bold text-center mb-12 text-gray-800">タイピング練習アプリ - モックアップカタログ</h1>
-        <p class="text-center text-gray-600 mb-16">TailwindCSS版</p>
+<body class="bg-gray-50">
+    <!-- 固定ナビゲーション -->
+    <nav class="fixed top-0 left-0 right-0 bg-white shadow-lg z-50 border-b">
+        <div class="max-w-7xl mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <h1 class="text-xl font-bold text-gray-800">タイピング練習アプリ - モックアップカタログ (TailwindCSS)</h1>
+                <div class="flex space-x-2">
+                    <a href="#login" class="px-3 py-1 bg-blue-500 text-white rounded text-sm hover:bg-blue-600 transition">ログイン</a>
+                    <a href="#menu" class="px-3 py-1 bg-blue-500 text-white rounded text-sm hover:bg-blue-600 transition">メニュー</a>
+                    <a href="#select" class="px-3 py-1 bg-blue-500 text-white rounded text-sm hover:bg-blue-600 transition">お題選択</a>
+                    <a href="#practice" class="px-3 py-1 bg-blue-500 text-white rounded text-sm hover:bg-blue-600 transition">練習中</a>
+                    <a href="#result" class="px-3 py-1 bg-blue-500 text-white rounded text-sm hover:bg-blue-600 transition">結果</a>
+                    <a href="#history" class="px-3 py-1 bg-blue-500 text-white rounded text-sm hover:bg-blue-600 transition">履歴</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- メインコンテンツ -->
+    <div class="pt-20 p-8">
+        <div class="max-w-7xl mx-auto">
 
         <!-- 1. ログイン画面 -->
-        <section class="mb-16">
+        <section id="login" class="mb-16">
             <h2 class="text-2xl font-semibold mb-6 text-gray-700 border-b-2 border-blue-500 pb-2">1. ログイン画面</h2>
             <div class="bg-white rounded-lg shadow-lg p-8 max-w-md mx-auto">
                 <div class="text-center mb-8">
@@ -37,7 +62,7 @@
         </section>
 
         <!-- 2. メニュー画面 -->
-        <section class="mb-16">
+        <section id="menu" class="mb-16">
             <h2 class="text-2xl font-semibold mb-6 text-gray-700 border-b-2 border-blue-500 pb-2">2. メニュー画面</h2>
             <div class="bg-white rounded-lg shadow-lg p-8">
                 <div class="text-center mb-8">
@@ -61,7 +86,7 @@
         </section>
 
         <!-- 3. お題選択画面 -->
-        <section class="mb-16">
+        <section id="select" class="mb-16">
             <h2 class="text-2xl font-semibold mb-6 text-gray-700 border-b-2 border-blue-500 pb-2">3. お題選択画面</h2>
             <div class="bg-white rounded-lg shadow-lg p-8">
                 <div class="flex justify-between items-center mb-6">
@@ -89,7 +114,7 @@
         </section>
 
         <!-- 4. タイピング練習画面 -->
-        <section class="mb-16">
+        <section id="practice" class="mb-16">
             <h2 class="text-2xl font-semibold mb-6 text-gray-700 border-b-2 border-blue-500 pb-2">4. タイピング練習画面</h2>
             <div class="bg-white rounded-lg shadow-lg p-8">
                 <div class="flex justify-between items-center mb-6">
@@ -112,7 +137,7 @@
         </section>
 
         <!-- 5. 練習結果画面 -->
-        <section class="mb-16">
+        <section id="result" class="mb-16">
             <h2 class="text-2xl font-semibold mb-6 text-gray-700 border-b-2 border-blue-500 pb-2">5. 練習結果画面</h2>
             <div class="bg-white rounded-lg shadow-lg p-8">
                 <div class="text-center mb-8">
@@ -162,7 +187,7 @@
         </section>
 
         <!-- 6. 練習履歴画面 -->
-        <section class="mb-16">
+        <section id="history" class="mb-16">
             <h2 class="text-2xl font-semibold mb-6 text-gray-700 border-b-2 border-blue-500 pb-2">6. 練習履歴画面</h2>
             <div class="bg-white rounded-lg shadow-lg p-8">
                 <div class="flex justify-between items-center mb-6">

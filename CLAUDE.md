@@ -1,7 +1,7 @@
 # CLAUDE.md
 
 - 日本語で返答してください。
-- 一連のタスクが終わったらコミットしてください。mainブランチで作業していただいて構いません。
+- 作業用のブランチを作成し、一連のタスクが終わったらコミットしてください。
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 

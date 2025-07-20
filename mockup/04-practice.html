@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>タイピング練習画面 - タイピング練習アプリ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- ナビゲーション -->
+    <nav class="bg-white shadow-sm border-b p-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex items-center justify-between">
+                <h1 class="text-xl font-bold text-gray-800">タイピング練習アプリ - 練習画面</h1>
+                <div class="flex space-x-2">
+                    <a href="01-login.html" class="px-3 py-1 bg-gray-200 text-gray-700 rounded text-sm hover:bg-gray-300">ログイン</a>
+                    <a href="03-select.html" class="px-3 py-1 bg-gray-200 text-gray-700 rounded text-sm hover:bg-gray-300">お題選択</a>
+                    <a href="04-practice.html" class="px-3 py-1 bg-blue-500 text-white rounded text-sm">練習中</a>
+                    <a href="05-result.html" class="px-3 py-1 bg-gray-200 text-gray-700 rounded text-sm hover:bg-gray-300">結果</a>
+                    <a href="06-history.html" class="px-3 py-1 bg-gray-200 text-gray-700 rounded text-sm hover:bg-gray-300">履歴</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- メインコンテンツ -->
+    <div class="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div class="bg-white rounded-lg shadow-lg p-8">
+            <!-- 進捗表示 -->
+            <div class="flex justify-between items-center mb-12">
+                <div class="text-lg text-gray-600">問題 3/15</div>
+                <div class="text-lg font-semibold text-gray-800">擬音・擬態語</div>
+            </div>
+
+            <!-- タイピング問題 -->
+            <div class="text-center space-y-8">
+                <!-- 漢字混じり文 -->
+                <div class="text-3xl font-bold text-gray-800">
+                    戸がかたかた音を立てている
+                </div>
+
+                <!-- ひらがな -->
+                <div class="text-xl text-gray-600">
+                    とがかたかたおとをたてている
+                </div>
+
+                <!-- ローマ字（入力表示） -->
+                <div class="text-xl font-mono bg-gray-100 p-4 rounded-lg inline-block min-w-96">
+                    <span class="text-green-600 bg-green-100">togakatakat</span><span class="bg-yellow-200 text-black">a</span><span class="text-gray-400">otowotateteiru</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

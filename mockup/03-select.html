@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お題選択画面 - タイピング練習アプリ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- ナビゲーション -->
+    <nav class="bg-white shadow-sm border-b p-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex items-center justify-between">
+                <h1 class="text-xl font-bold text-gray-800">タイピング練習アプリ - お題選択画面</h1>
+                <div class="flex space-x-2">
+                    <a href="01-login.html" class="px-3 py-1 bg-gray-200 text-gray-700 rounded text-sm hover:bg-gray-300">ログイン</a>
+                    <a href="03-select.html" class="px-3 py-1 bg-blue-500 text-white rounded text-sm">お題選択</a>
+                    <a href="04-practice.html" class="px-3 py-1 bg-gray-200 text-gray-700 rounded text-sm hover:bg-gray-300">練習中</a>
+                    <a href="05-result.html" class="px-3 py-1 bg-gray-200 text-gray-700 rounded text-sm hover:bg-gray-300">結果</a>
+                    <a href="06-history.html" class="px-3 py-1 bg-gray-200 text-gray-700 rounded text-sm hover:bg-gray-300">履歴</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- メインコンテンツ -->
+    <div class="max-w-6xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div class="bg-white rounded-lg shadow-lg p-8">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-800">お題を選択</h2>
+                <a href="index.html" class="text-blue-600 hover:text-blue-800 font-medium">← メインページに戻る</a>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <a href="04-practice.html" class="border border-gray-200 rounded-lg p-6 hover:border-blue-500 hover:shadow-md cursor-pointer transition duration-200 block">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">元気が出る言葉</h3>
+                    <p class="text-gray-600 mb-4 text-sm">青空って気持ちいいね、諦めないから叶うのです、諦めることが最大の敗北だ...</p>
+                    <div class="text-sm text-gray-500">15問</div>
+                </a>
+                <a href="04-practice.html" class="border border-gray-200 rounded-lg p-6 hover:border-blue-500 hover:shadow-md cursor-pointer transition duration-200 block">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">数のある言葉</h3>
+                    <p class="text-gray-600 mb-4 text-sm">値千金の逆転打、石の上にも三年、一撃必殺、一難去ってまた一難...</p>
+                    <div class="text-sm text-gray-500">15問</div>
+                </a>
+                <a href="04-practice.html" class="border border-gray-200 rounded-lg p-6 hover:border-blue-500 hover:shadow-md cursor-pointer transition duration-200 block">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">擬音・擬態語</h3>
+                    <p class="text-gray-600 mb-4 text-sm">会えなくてがっかりした、足をばたばたさせる、雨が続いてじめじめしている...</p>
+                    <div class="text-sm text-gray-500">15問</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>練習履歴画面 - タイピング練習アプリ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- ナビゲーション -->
+    <nav class="bg-white shadow-sm border-b p-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex items-center justify-between">
+                <h1 class="text-xl font-bold text-gray-800">タイピング練習アプリ - 履歴画面</h1>
+                <div class="flex space-x-2">
+                    <a href="01-login.html" class="px-3 py-1 bg-gray-200 text-gray-700 rounded text-sm hover:bg-gray-300">ログイン</a>
+                    <a href="03-select.html" class="px-3 py-1 bg-gray-200 text-gray-700 rounded text-sm hover:bg-gray-300">お題選択</a>
+                    <a href="04-practice.html" class="px-3 py-1 bg-gray-200 text-gray-700 rounded text-sm hover:bg-gray-300">練習中</a>
+                    <a href="05-result.html" class="px-3 py-1 bg-gray-200 text-gray-700 rounded text-sm hover:bg-gray-300">結果</a>
+                    <a href="06-history.html" class="px-3 py-1 bg-blue-500 text-white rounded text-sm">履歴</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- メインコンテンツ -->
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div class="bg-white rounded-lg shadow-lg p-8">
+            <!-- ヘッダー -->
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-800">練習履歴</h2>
+                <a href="index.html" class="text-blue-600 hover:text-blue-800 font-medium">← メインページに戻る</a>
+            </div>
+
+            <!-- フィルタ・ソート -->
+            <div class="flex justify-between items-center mb-6">
+                <div class="flex space-x-4">
+                    <select class="border border-gray-300 rounded-md px-3 py-2 text-sm">
+                        <option>すべてのお題</option>
+                        <option>元気が出る言葉</option>
+                        <option>数のある言葉</option>
+                        <option>擬音・擬態語</option>
+                    </select>
+                    <select class="border border-gray-300 rounded-md px-3 py-2 text-sm">
+                        <option>最新順</option>
+                        <option>スコア順</option>
+                        <option>WPM順</option>
+                    </select>
+                </div>
+                <div class="text-sm text-gray-500">
+                    全98件中 1-20件を表示
+                </div>
+            </div>
+
+            <!-- 履歴テーブル -->
+            <div class="overflow-x-auto">
+                <table class="w-full text-sm">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="text-left p-4 font-semibold text-gray-700">日時</th>
+                            <th class="text-left p-4 font-semibold text-gray-700">お題</th>
+                            <th class="text-left p-4 font-semibold text-gray-700">スコア</th>
+                            <th class="text-left p-4 font-semibold text-gray-700">WPM</th>
+                            <th class="text-left p-4 font-semibold text-gray-700">正解率</th>
+                            <th class="text-left p-4 font-semibold text-gray-700">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 text-gray-800">2024-01-15 14:30</td>
+                            <td class="p-4">
+                                <span class="text-gray-700 text-xs font-medium px-2 py-1 rounded bg-gray-100">擬音・擬態語</span>
+                            </td>
+                            <td class="p-4 font-semibold">606</td>
+                            <td class="p-4 font-medium">617</td>
+                            <td class="p-4">99.39%</td>
+                            <td class="p-4">
+                                <a href="05-result.html" class="text-blue-600 hover:underline">詳細</a>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 text-gray-800">2024-01-15 13:15</td>
+                            <td class="p-4">
+                                <span class="text-gray-700 text-xs font-medium px-2 py-1 rounded bg-gray-100">数のある言葉</span>
+                            </td>
+                            <td class="p-4 font-semibold">594</td>
+                            <td class="p-4 font-medium">606</td>
+                            <td class="p-4">99.38%</td>
+                            <td class="p-4">
+                                <a href="05-result.html" class="text-blue-600 hover:underline">詳細</a>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 text-gray-800">2024-01-14 16:45</td>
+                            <td class="p-4">
+                                <span class="text-gray-700 text-xs font-medium px-2 py-1 rounded bg-gray-100">元気が出る言葉</span>
+                            </td>
+                            <td class="p-4 font-semibold">542</td>
+                            <td class="p-4 font-medium">558</td>
+                            <td class="p-4">97.8%</td>
+                            <td class="p-4">
+                                <a href="05-result.html" class="text-blue-600 hover:underline">詳細</a>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 text-gray-800">2024-01-14 15:20</td>
+                            <td class="p-4">
+                                <span class="text-gray-700 text-xs font-medium px-2 py-1 rounded bg-gray-100">擬音・擬態語</span>
+                            </td>
+                            <td class="p-4 font-semibold">489</td>
+                            <td class="p-4 font-medium">512</td>
+                            <td class="p-4">95.2%</td>
+                            <td class="p-4">
+                                <a href="05-result.html" class="text-blue-600 hover:underline">詳細</a>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 text-gray-800">2024-01-13 19:30</td>
+                            <td class="p-4">
+                                <span class="text-gray-700 text-xs font-medium px-2 py-1 rounded bg-gray-100">元気が出る言葉</span>
+                            </td>
+                            <td class="p-4 font-semibold">567</td>
+                            <td class="p-4 font-medium">588</td>
+                            <td class="p-4">98.5%</td>
+                            <td class="p-4">
+                                <a href="05-result.html" class="text-blue-600 hover:underline">詳細</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- ページネーション -->
+            <div class="flex justify-center mt-8">
+                <div class="flex space-x-2">
+                    <button class="px-3 py-2 bg-gray-200 text-gray-500 rounded cursor-not-allowed">前へ</button>
+                    <button class="px-3 py-2 bg-blue-600 text-white rounded">1</button>
+                    <button class="px-3 py-2 bg-gray-200 text-gray-700 rounded hover:bg-gray-300">2</button>
+                    <button class="px-3 py-2 bg-gray-200 text-gray-700 rounded hover:bg-gray-300">3</button>
+                    <button class="px-3 py-2 bg-gray-200 text-gray-700 rounded hover:bg-gray-300">次へ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

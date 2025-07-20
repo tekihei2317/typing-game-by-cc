@@ -1,6 +1,8 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
+import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 
@@ -31,8 +33,10 @@ function App() {
       {/* ナビゲーション */}
       <div className="bg-white shadow-sm border-b p-4">
         <div className="max-w-7xl mx-auto">
-          <h1 className="text-2xl font-bold text-center mb-4">タイピング練習アプリ - モックアップカタログ</h1>
-          <p className="text-center text-muted-foreground mb-4">shadcn/ui版</p>
+          <div className="flex items-center justify-center space-x-2 mb-4">
+            <h1 className="text-2xl font-bold text-center">タイピング練習アプリ - モックアップカタログ</h1>
+            <Badge variant="outline">shadcn/ui版</Badge>
+          </div>
           <div className="flex flex-wrap justify-center gap-2">
             {screens.map((screen) => (
               <Button
@@ -58,12 +62,12 @@ function App() {
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="space-y-2">
-                <label className="text-sm font-medium">メールアドレス</label>
-                <Input type="email" placeholder="example@example.com" />
+                <Label htmlFor="email">メールアドレス</Label>
+                <Input id="email" type="email" placeholder="example@example.com" />
               </div>
               <div className="space-y-2">
-                <label className="text-sm font-medium">パスワード</label>
-                <Input type="password" placeholder="パスワードを入力" />
+                <Label htmlFor="password">パスワード</Label>
+                <Input id="password" type="password" placeholder="パスワードを入力" />
               </div>
               <Button className="w-full">ログイン</Button>
               <div className="text-center">
@@ -115,21 +119,30 @@ function App() {
               <div className="grid md:grid-cols-3 gap-4">
                 <Card className="cursor-pointer hover:border-primary transition-colors">
                   <CardHeader>
-                    <CardTitle className="text-lg">基本単語</CardTitle>
+                    <div className="flex items-center justify-between">
+                      <CardTitle className="text-lg">基本単語</CardTitle>
+                      <Badge variant="secondary">初級</Badge>
+                    </div>
                     <CardDescription>初心者向けの基本的な単語</CardDescription>
                     <div className="text-xs text-muted-foreground">問題数: 50</div>
                   </CardHeader>
                 </Card>
                 <Card className="cursor-pointer hover:border-primary transition-colors">
                   <CardHeader>
-                    <CardTitle className="text-lg">ビジネス用語</CardTitle>
+                    <div className="flex items-center justify-between">
+                      <CardTitle className="text-lg">ビジネス用語</CardTitle>
+                      <Badge variant="outline">中級</Badge>
+                    </div>
                     <CardDescription>仕事でよく使われる用語</CardDescription>
                     <div className="text-xs text-muted-foreground">問題数: 75</div>
                   </CardHeader>
                 </Card>
                 <Card className="cursor-pointer hover:border-primary transition-colors">
                   <CardHeader>
-                    <CardTitle className="text-lg">IT用語</CardTitle>
+                    <div className="flex items-center justify-between">
+                      <CardTitle className="text-lg">IT用語</CardTitle>
+                      <Badge variant="destructive">上級</Badge>
+                    </div>
                     <CardDescription>プログラマー向けの専門用語</CardDescription>
                     <div className="text-xs text-muted-foreground">問題数: 100</div>
                   </CardHeader>
@@ -172,8 +185,11 @@ function App() {
           <Card>
             <CardHeader className="text-center">
               <CardTitle className="mb-4">練習結果</CardTitle>
-              <div className="text-6xl font-bold text-primary mb-2">A+</div>
-              <CardDescription>スコア: 8,500点</CardDescription>
+              <div className="flex flex-col items-center space-y-2">
+                <div className="text-6xl font-bold text-primary">A+</div>
+                <Badge variant="default" className="text-lg px-4 py-2">エクセレント！</Badge>
+              </div>
+              <CardDescription className="mt-4">スコア: 8,500点</CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="grid md:grid-cols-4 gap-4">
